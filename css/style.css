@@ -1,0 +1,73 @@
+:root { 
+    --primary: #1b5e20; 
+    --secondary: #2e7d32; 
+    --accent: #ffd600; 
+    --light-bg: #f8f9fa;
+    --background: #eef2f3;
+    --text-color: #333;
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, sans-serif; 
+    background-color: var(--background); 
+    margin: 0; padding: 0;
+    color: var(--text-color);
+}
+
+.header { 
+    background: white; text-align: center; padding: 20px; 
+    border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.app-logo { 
+    width: 70px; height: 70px; border-radius: 15px; 
+    object-fit: cover; border: 2px solid var(--primary); 
+}
+
+.container { max-width: 500px; margin: 15px auto; padding-bottom: 50px; }
+
+.card { 
+    background: white; padding: 15px; border-radius: 20px; 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06); margin: 0 10px;
+}
+
+.input-box { background: var(--light-bg); padding: 12px; border-radius: 12px; margin-bottom: 12px; }
+
+label { display: block; font-size: 0.75rem; color: #666; font-weight: bold; margin-bottom: 5px; }
+
+select, input { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; }
+
+.table-scroll { overflow-x: auto; margin-top: 10px; }
+
+table { width: 100%; border-collapse: collapse; }
+
+th { text-align: left; color: #999; font-size: 0.7rem; text-transform: uppercase; padding: 8px; }
+
+td { padding: 10px 8px; border-bottom: 1px solid #f1f1f1; font-size: 0.85rem; }
+
+.qty-val { font-weight: bold; color: var(--primary); }
+
+.total-banner { 
+    background: var(--primary); color: white; padding: 15px; 
+    border-radius: 15px; text-align: center; margin: 15px 0;
+}
+
+.total-val { font-size: 1.6rem; font-weight: bold; color: var(--accent); display: block; }
+
+.button-group { display: flex; flex-direction: column; gap: 10px; }
+
+button { 
+    width: 100%; padding: 12px; border-radius: 10px; border: none; 
+    font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px;
+}
+
+.btn-whatsapp { background: #25D366; color: white; }
+.btn-email { background: #4CAF50; color: white; }
+.btn-sms { background: #f44336; color: white; }
+
+.alert { 
+    background: #e3f2fd; border-left: 4px solid #2196f3; 
+    padding: 10px; border-radius: 8px; font-size: 0.75rem; margin-top: 15px;
+    display: flex; gap: 8px;
+}

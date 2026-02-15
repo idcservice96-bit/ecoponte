@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoPonte Bénin - Expert</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="header">
+    <img src="img/logo.png" alt="Logo EcoPonte" class="app-logo">
+    <h1>EcoPonte Bénin <br> IdcServices 01 95002396</h1>
+</div>
+
+<div class="container">
+    <div class="card">
+        <div class="input-box">
+            <label><i class="fa-solid fa-layer-group"></i> Type d'Élevage</label>
+            <select id="typeElevage">
+                <option value="pondeuse" data-icon="fa-egg">Poules Pondeuses</option>
+                <option value="chair" data-icon="fa-drumstick-bite">Poulets de Chair</option>
+                <option value="local" data-icon="fa-crow">Poulets Locaux/Bicyclettes</option>
+                <option value="pintade" data-icon="fa-kiwi-bird">Pintades</option>
+                <option value="caille" data-icon="fa-kiwi-bird">Cailles</option>
+                <option value="dindon" data-icon="fa-kiwi-bird">Dindons</option>
+            </select>
+        </div>
+
+        <div class="input-box">
+            <label><i class="fa-solid fa-scale-balanced"></i> Quantité à produire (kg)</label>
+            <input type="number" id="totalQty" value="100">
+        </div>
+
+        <div class="table-scroll">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ingrédient</th>
+                        <th>Poids (kg)</th>
+                        <th>Prix/kg</th>
+                        <th>Montant</th>
+                        <th>Aide</th>
+                    </tr>
+                </thead>
+                <tbody id="result-table"></tbody>
+            </table>
+        </div>
+
+        <div class="total-banner">
+            <span>Coût Total du Mélange</span>
+            <span class="total-val" id="totalCostDisplay">0</span>
+            <small>FCFA</small>
+        </div>
+
+        <div class="button-group">
+            <button class="btn-whatsapp" id="btnWhatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+            <button class="btn-email" id="btnEmail"><i class="fa-solid fa-envelope"></i> Email</button>
+            <button class="btn-sms" id="btnSms"><i class="fa-solid fa-sms"></i> SMS</button>
+        </div>
+
+        <div class="alert">
+            <i class="fa-solid fa-circle-info"></i>
+            <div id="conseilText">
+                <strong>Conseil :</strong> Veillez à la qualité des matières premières pour un rendement optimal.
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
