@@ -1,22 +1,4 @@
 const formulations = {
-    pondeuse: [
-        { name: "Maïs", ratio: 0.45, price: 100 },
-        { name: "Soja", ratio: 0.15, price: 200 },
-        { name: "Son de Riz/Blé", ratio: 0.10, price: 150 },
-        { name: "Coton", ratio: 0.10, price: 300 },
-        { name: "Poisson", ratio: 0.05, price: 800 },
-        { name: "Concentré", ratio: 0.05, price: 1200 },
-        { name: "Calcium", ratio: 0.07, price: 200 },
-        { name: "Huile Rouge", ratio: 0.03, price: 1100 }
-    ],
-    chair: [
-        { name: "Maïs", ratio: 0.50, price: 100 },
-        { name: "Soja", ratio: 0.25, price: 200 },
-        { name: "Son", ratio: 0.08, price: 150 },
-        { name: "Poisson", ratio: 0.05, price: 800 },
-        { name: "Concentré", ratio: 0.05, price: 1200 },
-        { name: "Huile Rouge", ratio: 0.07, price: 1100 }
-    ],
      pondeuse: [
             { name: "Maïs", ratio: 0.45, price: 100 },
             { name: "Soja", ratio: 0.15, price: 200 },
@@ -58,9 +40,8 @@ const formulations = {
             { name: "Calcium", ratio: 0.15, price: 250 },
             { name: "Phosphore", ratio: 0.15, price: 300 }
         ]
-    }
+    };
     // Vous pouvez rajouter les autres types ici...
-};
 
 function calculer() {
     const type = document.getElementById('typeElevage').value;
@@ -122,3 +103,4 @@ document.addEventListener('DOMContentLoaded', () => {
     calculer();
 
 });
+
