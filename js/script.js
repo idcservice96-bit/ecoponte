@@ -17,6 +17,48 @@ const formulations = {
         { name: "Concentré", ratio: 0.05, price: 1200 },
         { name: "Huile Rouge", ratio: 0.07, price: 1100 }
     ],
+     pondeuse: [
+            { name: "Maïs", ratio: 0.45, price: 100 },
+            { name: "Soja", ratio: 0.15, price: 200 },
+            { name: "Son de Riz ou Blé", ratio: 0.10, price: 150 },
+            { name: "Coton", ratio: 0.10, price: 300 },
+            { name: "Poisson", ratio: 0.05, price: 800 },
+            { name: "Concentré ", ratio: 0.05, price: 1200 },
+            { name: "Calcium/coquilles", ratio: 0.07, price: 200 },
+            { name: "Huile Rouge", ratio: 0.03, price: 1100 }
+        ],
+        chair: [
+            { name: "Maïs", ratio: 0.50, price: 100 },
+            { name: "Soja", ratio: 0.25, price: 200 },
+            { name: "Son de Riz ou Blé", ratio: 0.08, price: 150 },
+            { name: "Poisson", ratio: 0.05, price: 800 },
+            { name: "Concentré ", ratio: 0.05, price: 1200 },
+            { name: "Huile Rouge", ratio: 0.07, price: 1100 }
+        ],
+        local: [
+            { name: "Maïs/Sorgho", ratio: 0.60, price: 100 },
+            { name: "Soja", ratio: 0.10, price: 200 },
+            { name: "Son de Rizou Blé", ratio: 0.15, price: 150 },
+            { name: "Concentré 5%", ratio: 0.05, price: 1200 },
+            { name: "Calcium", ratio: 0.10, price: 200 }
+        ],
+        pintade: [
+            { name: "Maïs", ratio: 0.60, price: 100 },
+            { name: "Soja", ratio: 0.20, price: 200 },
+            { name: "Céréales", ratio: 0.10, price: 150 },
+            { name: "Insectes", ratio: 0.10, price: 800 }
+        ],
+        caille: [
+            { name: "Maïs", ratio: 0.70, price: 100 },
+            { name: "Protéines", ratio: 0.30, price: 250 }
+        ],
+        dindon: [
+            { name: "Maïs", ratio: 0.50, price: 100 },
+            { name: "Soja", ratio: 0.20, price: 200 },
+            { name: "Calcium", ratio: 0.15, price: 250 },
+            { name: "Phosphore", ratio: 0.15, price: 300 }
+        ]
+    }
     // Vous pouvez rajouter les autres types ici...
 };
 
@@ -78,4 +120,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     calculer();
+
 });
